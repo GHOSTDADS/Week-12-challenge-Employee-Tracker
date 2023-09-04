@@ -9,6 +9,6 @@ const dbConnection = mysql.createConnection(
     database: process.env.DB_NAME
   },
   console.log(`Connected to the ${process.env.DB_NAME} database.`)
-);
+).promise();
 
 module.exports = { dbConnection };

@@ -6,6 +6,8 @@ const empTrack = new EmpolyeeTracker();
 
 dbConnection.connect(err => {
     if (err) throw err;
+})
+.then(() => {
     console.log(chalk.red("Welcome to the...\n"));
     console.log(chalk.green.bold("----------------------------------------\n"));
     console.log(chalk.green.bold("        EMPLOYEE TRACKER 300000!!!\n"));
